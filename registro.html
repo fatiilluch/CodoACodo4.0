@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>-->
     <link rel="stylesheet" href="style.css">
     <title> Registro </title>
 </head>
@@ -15,7 +15,46 @@
         </nav>    
         <h1> La cocina de Fati </h1>
     </header>
+    
+    <main>
+        <form method="POST" action="show_data.html">
+            <label> Nombre: <input type="text" name="nombre" placeholder="Ingrese su nombre aqui..."></label> <br><br>
+            <label> Apellido: <input type="text" name="apellido" placeholder="Ingrese su apellido aqui..."></label> <br><br>
+            <label> Direccion: <input type="text" name="direccion" placeholder="Ingrese su direccion aqui..."></label> <br><br>
+            <label> Ciudad: <input type="text" name="ciudad" placeholder="C.A.B.A">  </label> <br><br>
+            <label> Código Postal: <input type="text" name="cp" placeholder="Ingrese su código postal aqui... "></label> <br><br>
+            <label> Fecha de Nacimiento (mm/dd/yyyy): <input type="datetime-local" name="fechaNac"></label> <br><br>
+            
+            <label> Género: 
+                <input type="radio" name="genero" value="hombre"> Hombre
+                <input type="radio" name="genero" value="mujer"> Mujer
+                <input type="radio" name="genero" value="otro"> Otro
+            </label>
+            <br><br>
+            <label> Estudios: 
+                <input type="checkbox" name="study" value="primarios"> Primarios
+                <input type="checkbox" name="study" value="secundarios"> Secundarios
+                <input type="checkbox" name="study" value="terciarios"> Terciarios
+                <input type="checkbox" name="study" value="universitarios"> Universitarios
+                <input type="checkbox" name="study" value="otros"> Otros
+            </label>
+            <br><br>
+            <input type="submit" value="Enviar" style="">
+            <br><br>
+            <h4> Si usted hace click en el botón "Enviar", la información será enviada a la página 'show_data.html' </h4>
+            
+        </form>
+    </main>
 
+    <footer> 
+        <a href="https://www.twitter.com"><img src="https://img.icons8.com/nolan/64/twitter-circled.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/fatima.lluch"><img src="https://img.icons8.com/nolan/64/facebook-circled.png"alt="Facebook"/></a>
+        <a href="https://www.pinterest.com"><img src="https://img.icons8.com/nolan/64/pinterest.png" alt="Pinterest"/></a>
+        <a href="https://www.instagram.com/fatiilluch"><img src="https://img.icons8.com/nolan/64/instagram-new.png" alt="Instagram"/></a> 
+        <a href="https://www.linkedin.com/in/f%C3%A1tima-lluch-305769157/"><img src="https://img.icons8.com/nolan/64/linkedin.png" alt="LinkedIn"/></a>
+        <br>
+        &COPY; Derechos Reservados @2020;
+    </footer>
     
 </body>
 </html>

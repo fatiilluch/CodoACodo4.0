@@ -3,38 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Codo a Codo </title>
-    
-    <style>
-        a:link {color: white;}
-        a:visited {color: darkblue;}
-        .myA{
-            background-color: orangered; 
-            padding: 5px;
-        }
-    </style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="background-color: orange;">
-        <a class="myA" href="index.html">Home</a> <a class="myA"  href="about.html">Acerca de</a> <a class="myA" href="contacto.html">Contacto</a>
-        <h1 style="text-align: center; font-family: cursive; font-size: xx-large;"> La cocina de Fati </h1>
-    </div>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> <a href="about.html">Acerca de</a> <a href="contacto.html">Contacto</a>
+        </nav>    
+        <h1> La cocina de Fati </h1>
+    </header>
 
-    <h2> Sopa Crema de Calabaza </h2>
+    <main>
+        <section>
+            <h2> Sopa Crema de Calabaza </h2>
+            
+            <img src="sopa_calabaza.jpg" alt="Sopa de Calabaza" style= "width: 450px; height: 350px; display: block; margin: auto;">
 
-    <div>
-        <img src="sopa_calabaza.jpg" alt="Sopa de Calabaza" style= "width: 450px; height: 350px; display: block; margin: auto;">
-    </div>
+            <a id="receta" style="background-color: orangered;" href="receta.html"> Receta </a>
+        </section>
+    </main>
 
-    <br>
-
-    <a class="myA" style="background-color: orangered;" href="receta.html"> Receta </a>
-    
-    <br><br><br>
-
-    <div style="text-align: center; background-color: orange; padding: 20px;"> 
-        Derechos Reservados @2020 
-    </div>
+    <footer> 
+        &COPY; Derechos Reservados @2020;
+    </footer>
 </body>
 </html>

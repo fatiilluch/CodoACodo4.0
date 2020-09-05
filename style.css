@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	color: black;
+}
+
+header {
+    background-color: orange;
+    height: 100px;
+}
+
+nav a {
+    padding: 10px 5px;
+    text-align: center;
+    background-color: orangered;
+    text-decoration: none;
+    color: white;
+    margin: 0px 2px;
+}
+
+#receta {
+    padding: 10px 5px;
+    text-align: center;
+    background-color: orangered;
+    text-decoration: none;
+    color: white;
+    margin: 0px 2px;
+}    
+
+h2 {
+    margin: 10px 0px;
+}
+
+main {
+    padding: 20px 0px;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center; 
+    font-size: xx-large;
+}
+
+footer {
+    text-align: center; 
+    background-color: orange; 
+    padding: 20px;
+}
+
+ol {
+    color: brown;
+    margin-left: 20px;
+}
+
+section #about {
+    width: 500px;
+    margin: auto;
+}

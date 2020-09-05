@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>-->
     <link rel="stylesheet" href="style.css">
     <title> Registro </title>
 </head>
@@ -20,10 +19,16 @@
         <form method="POST" action="show_data.html">
             <label> Nombre: <input type="text" name="nombre" placeholder="Ingrese su nombre aqui..."></label> <br><br>
             <label> Apellido: <input type="text" name="apellido" placeholder="Ingrese su apellido aqui..."></label> <br><br>
-            <label> Direccion: <input type="text" name="direccion" placeholder="Ingrese su direccion aqui..."></label> <br><br>
-            <label> Ciudad: <input type="text" name="ciudad" placeholder="C.A.B.A">  </label> <br><br>
-            <label> Código Postal: <input type="text" name="cp" placeholder="Ingrese su código postal aqui... "></label> <br><br>
-            <label> Fecha de Nacimiento (mm/dd/yyyy): <input type="datetime-local" name="fechaNac"></label> <br><br>
+            <label> Direccion: <br><br>
+            <label> Calle: <input type="text" name="calle" placeholder="Ingrese su calle aqui..."> </label>
+            <label> Número: <input type="number" name="num" placeholder="Ingrese el número..."> </label>
+            <label> Ciudad: <input type="text" name="ciudad" placeholder="C.A.B.A">  </label>
+            <label> Código Postal: <input type="text" name="cp" placeholder="Ingrese su código postal aqui... " style="width: 200px;"></label> <br><br>
+            <label> Teléfono: <input type="tel" name="telefono" pattern="\d{3}[\-]'d{3}{'-}'d{4}'"></label>
+            <label> Fecha de Nacimiento (mm/dd/yyyy): <input type="datetime" name="fechaNac"></label>
+            <label> Email(s): <input type="email" name="email" style="width: 350px;" placeholder="mail@dominio.com, mail2@dominio.com" multiple> </label>
+            <label> Clave: <input type="password" name="pass" style="width: 350px;" maxlength="20" minlength="8"> </label>
+            <label> Link del TP3: <input type="url" name="sitio"></label><br><br>
             
             <label> Género: 
                 <input type="radio" name="genero" value="hombre"> Hombre
@@ -31,15 +36,37 @@
                 <input type="radio" name="genero" value="otro"> Otro
             </label>
             <br><br>
-            <label> Estudios: 
-                <input type="checkbox" name="study" value="primarios"> Primarios
-                <input type="checkbox" name="study" value="secundarios"> Secundarios
-                <input type="checkbox" name="study" value="terciarios"> Terciarios
-                <input type="checkbox" name="study" value="universitarios"> Universitarios
-                <input type="checkbox" name="study" value="otros"> Otros
-            </label>
+
+            <label> Conocimientos Previos: 
+                <input type="checkbox" name="knowledge" value="html"> HTML
+                <input type="checkbox" name="knowledge" value="css"> CSS
+                <input type="checkbox" name="knowledge" value="javascript"> Javascript
+                <input type="checkbox" name="knowledge" value="typescript"> Typescript
+                <input type="checkbox" name="knowledge" value="angular"> Angular
+                <input type="checkbox" name="knowledge" value="bd"> Base de Datos
+                <input type="checkbox" name="knowledge" value="python"> Python
+            </label> 
+
             <br><br>
-            <input type="submit" value="Enviar" style="">
+            
+            <label> Estudios: <br>
+                <select name="studies">
+                    <option disabled selected> Selecciona una Opción </option>
+                    <option value="primario"> Primario </option>
+                    <option value="secundario"> Secundario </option>
+                    <option value="terciario"> Terciario </option>
+                    <option value="universitario"> Universitario </option>
+                    <option value="otro"> Otro </option>
+                </select>
+            </label>
+
+            <br><br>
+            <label> Comentarios: <br> 
+                <textarea name="conocimiento"> </textarea>
+            </label> 
+
+            <br><br>
+            <input type="submit" value="Enviar">
             <br><br>
             <h4> Si usted hace click en el botón "Enviar", la información será enviada a la página 'show_data.html' </h4>
             

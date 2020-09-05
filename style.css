@@ -10,26 +10,31 @@ body{
 }
 
 header {
-    background-color: orange;
+    background-color: black;
+    color: white;
     height: 100px;
 }
 
 nav a {
-    padding: 10px 5px;
+    padding: 5px;
     text-align: center;
-    background-color: chocolate;
+    background-color: gray;
     text-decoration: none;
     color: white;
     margin: 0px 2px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 #receta {
-    padding: 10px 5px;
+    padding: 5px;
     text-align: center;
-    background-color: chocolate;
+    background-color: gray;
     text-decoration: none;
     color: white;
     margin: 0px 2px;
+    text-decoration: none;
+    border-radius: 5px;
 }    
 
 h2 {
@@ -48,7 +53,8 @@ h1 {
 
 footer {
     text-align: center; 
-    background-color: orange; 
+    background-color: black; 
+    color:white;
     padding: 20px;
 }
 
@@ -68,4 +74,9 @@ table {
 section #about {
     width: 800px;
     margin: auto;
+}
+
+textarea {
+    height: 6em;
+    width: 400px;
 }

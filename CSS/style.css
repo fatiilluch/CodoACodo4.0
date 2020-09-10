@@ -8,6 +8,7 @@ body{
 	font-family: 'Raleway', sans-serif;
     background-image: url("../SRC/starSky.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
     color: bisque;
 }
 

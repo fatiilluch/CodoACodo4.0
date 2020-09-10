@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+    background-image: url("../SRC/starSky.jpg");
+    background-size: 100%;
+    color: bisque;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+nav a {
+    padding: 5px;
+    text-align: center;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    margin: 0px 2px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#volver {
+    padding: 5px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    margin: 0px 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+}    
+
+h2 {
+    margin: 10px 0px;
+}
+
+main {
+    padding: 20px 0px;
+    min-height: 800px;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center; 
+    font-size: 50px;
+}
+
+footer {
+    text-align: center; 
+    background-color: black; 
+    color:white;
+    padding: 20px;
+    clear: both;
+}
+
+ol {
+    color: brown;
+    margin-left: 35px;
+}
+
+ul {
+    margin-left: 40px;
+}
+
+table {
+    margin-left: 20px;
+}
+
+section #about {
+    width: 800px;
+    margin: auto;
+}
+
+textarea {
+    height: 6em;
+    width: 400px;
+}
+
+h3 {
+    color: wheat;
+}
+
+section img {
+    height: 500px;
+    width: 500px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: wrap;
+}

@@ -28,7 +28,7 @@ nav a {
     border-radius: 5px;
 }
 
-#volver {
+.volver a {
     padding: 5px;
     background-color: gray;
     text-decoration: none;
@@ -36,8 +36,13 @@ nav a {
     margin: 0px 2px;
     text-decoration: none;
     border-radius: 5px;
-    float: left;
 }    
+
+.volver {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 h2 {
     margin: 10px 0px;
@@ -99,4 +104,6 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     flex: wrap;
+    flex-wrap: wrap;
+    padding-top: 15px;
 }

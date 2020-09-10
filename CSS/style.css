@@ -8,8 +8,10 @@ body{
 	font-family: 'Raleway', sans-serif;
     background-image: url("../SRC/starSky.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: round;
     color: bisque;
+    background-color:transparent;
+    background-color: black;
 }
 
 header {
@@ -84,6 +86,10 @@ table {
 section #about {
     width: 800px;
     margin: auto;
+    text-align: justify; 
+    font-size:xx-large; 
+    color: white; 
+    font-style: bold;
 }
 
 textarea {

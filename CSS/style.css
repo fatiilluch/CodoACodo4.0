@@ -113,3 +113,27 @@ section {
     flex-wrap: wrap;
     padding-top: 15px;
 }
+
+.magic_left {
+    padding-left: 80px;
+}
+
+main form {
+    width: 1500px;
+    margin: auto;
+    text-align: justify; 
+    font-size:x-large; 
+    color: white; 
+    font-style: bold;
+}
+
+#enviar {
+    padding: 5px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    margin: 0px 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}

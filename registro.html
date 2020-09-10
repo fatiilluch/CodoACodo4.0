@@ -24,11 +24,10 @@
             <label> Número: <input type="number" name="num" placeholder="Ingrese el número..."> </label>
             <label> Ciudad: <input type="text" name="ciudad" placeholder="C.A.B.A">  </label>
             <label> Código Postal: <input type="text" name="cp" placeholder="Ingrese su código postal aqui... " style="width: 200px;"></label> <br><br>
-            <label> Teléfono: <input type="tel" name="telefono" pattern="\d{3}[\-]'d{3}{'-}'d{4}'"></label>
-            <label> Fecha de Nacimiento (mm/dd/yyyy): <input type="datetime" name="fechaNac"></label>
-            <label> Email(s): <input type="email" name="email" style="width: 350px;" placeholder="mail@dominio.com, mail2@dominio.com" multiple> </label>
-            <label> Clave: <input type="password" name="pass" style="width: 350px;" maxlength="20" minlength="8"> </label>
-            <label> Link del TP3: <input type="url" name="sitio"></label><br><br>
+            <label> Teléfono: <input type="tel" name="telefono" pattern="\d{3}[\-]'d{3}{'-}'d{4}'"></label> <br> <br>
+            <label> Fecha de Nacimiento (mm/dd/yyyy): <input type="datetime" name="fechaNac"></label> <br> <br>
+            <label> Email: <input type="email" name="email" style="width: 350px;" placeholder="mail@dominio.com, mail2@dominio.com"> </label> <br> <br>
+            <label> Contraseña: <input type="password" name="pass" style="width: 350px;" maxlength="20" minlength="8"> </label><br> <br>
             
             <label> Género: 
                 <input type="radio" name="genero" value="hombre"> Hombre
@@ -36,37 +35,184 @@
                 <input type="radio" name="genero" value="otro"> Otro
             </label>
             <br><br>
-
-            <label> Conocimientos Previos: 
-                <input type="checkbox" name="knowledge" value="html"> HTML
-                <input type="checkbox" name="knowledge" value="css"> CSS
-                <input type="checkbox" name="knowledge" value="javascript"> Javascript
-                <input type="checkbox" name="knowledge" value="typescript"> Typescript
-                <input type="checkbox" name="knowledge" value="angular"> Angular
-                <input type="checkbox" name="knowledge" value="bd"> Base de Datos
-                <input type="checkbox" name="knowledge" value="python"> Python
-            </label> 
-
-            <br><br>
-            
-            <label> Estudios: <br>
-                <select name="studies">
+            <label> Casa: <br>
+                <select name="house">
                     <option disabled selected> Selecciona una Opción </option>
-                    <option value="primario"> Primario </option>
-                    <option value="secundario"> Secundario </option>
-                    <option value="terciario"> Terciario </option>
-                    <option value="universitario"> Universitario </option>
-                    <option value="otro"> Otro </option>
+                    <option value="gryffindor"> Gryffindor </option>
+                    <option value="slytherin"> Slytherin </option>
+                    <option value="ravenclaw"> Ravenclaw </option>
+                    <option value="hufflepuff"> Hufflepuff </option>
                 </select>
             </label>
 
             <br><br>
-            <label> Comentarios: <br> 
+
+            <label> ¿Qué hechizos conoce?: <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="accio"> Accio <br>     
+                <input class="magic_left" type="checkbox" name="knowledge" value="adherencia"> Adherencia Permanente <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="aguamenti"> Aguamenti <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="aCaliente"> Aire Caliente <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="alarma"> Alarma de Intrusos <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="pepper"> Aliento de Pimienta <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="alivianacion"> Alivianación de un Hechizo <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="alohomora"> Alohomora <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="alternacion"> Alternación <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="amortiguador"> Amortiguador <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="anapneo"> Anapneo <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="accio"> Animador <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="accio"> Anti-Desaparición <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="antiIntruso"> Anti-Intruso <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="antiLadrones"> Anti-Ladrones <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="antiTrampa"> Anti-Trampa <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="aparecium"> Aparecium <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="aparicion"> Aparición Conjunta <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="apparate"> Apparate <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="araniaExumai"> Arania Exumai <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="arresto"> Aresto Momentum <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="arrojar"> Arrojar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="ascendio"> Ascendio <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="atadura"> Atadura de Lengua <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="kedavra"> Avada Kedavra <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="avis"> Avis <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="babosas"> Babosas <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="backfiring"> Backfiring Jinx <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="balbuceador"> Balbuceador <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Calvicie Instantánea <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="cambioC">Cambio de Color <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="carpeRetractum"> Carpe Retractum <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="cascoBurbuja"> Casco-Burbuja <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Chispas <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Colloportus <br> 
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Confundus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Conjuntivitis <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Contrarrestador <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Cortar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Crucio <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Deletrius <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Densaugeo <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Desaceleración <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Desaparecer <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Desilusionar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Desmaius <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Diffindo <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Dissendium <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Engorgio <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Ennervate <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Episkey <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Estallido <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Evanesco <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Expecto Patronum <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Expeledor <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="expelliarmus"> Expelliarmus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="expulso"> Expulso <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Extinguishing Spell <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Finite <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Finite Incantatem <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Flagrate <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Flotar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Fregotego <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Fuego Demoníaco <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Furnunculus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Férula <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Hipnosis <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Homorphus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Immobulus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Impedimenta <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Imperio <br> 
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Imperturbable <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Impervius <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Inanimatus <br> 
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Incarcerous <br> 
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Incendio <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Inmovilizador <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Invisibilidad <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Irrompible <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Juramento Inquebrantable <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Langlock <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Legeremancia <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Lengua de Cuerno <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Levicorpus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Liberacorpus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Locomotor Mortis <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Lugar In-Marcable <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Lumos <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Maldición de Mocos <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Mobili <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Moco de Murciélago <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Morsmordre <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Movimiento <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Muffliato <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Nox <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Obliviate <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Oclumancia <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Ocultamiento <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Oppugno <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Orchideous <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Orejas Crispadas <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Peso Ligero <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Petrificus Totalus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Piernas de Gelatina <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Portus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Posesión <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Posicionamiento <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Prior Incantato <br> 
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Protean <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Protego <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Puerro <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Punzar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Pus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Pérdida de Pelo <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Quietus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Recorte de Zarpas <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Reducio <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Reducto <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Relashio <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Rellenar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Rennervate <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Reparo <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Repelente <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Repelente de Muggles <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Restablecer <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Revelar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Rictusempra <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Riddikulus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Rodillas al Revés <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Sectumsempra <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Sensor de Cautela <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Sequía <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Serpensortia <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Shock <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Silencio <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Sonorus <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Soñar Despierto <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Specialis Revelio <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Sujetar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Sustantivo <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Tarantallegra <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Tergeo <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Tropezar <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="calvicieInstantánea"> Urticaria <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="waddiwasi"> Waddiwasi <br>
+                <input class="magic_left" type="checkbox" name="knowledge" value="wingleviosa"> Wingardium Leviosa <br>
+            </label> 
+
+            <br><br>
+
+            <label> ¿Qué es el espejo de Oesed?: <br> 
                 <textarea name="conocimiento"> </textarea>
             </label> 
 
             <br><br>
-            <input type="submit" value="Enviar">
+
+            <label> Complete la frase: Juro solemnemente que mis intenciones no son ... :
+                <input type="radio" name="genero" value="hombre"> Buenas
+                <input type="radio" name="genero" value="mujer"> Malas
+                <input type="radio" name="genero" value="otro"> Neutras
+            </label>
+
+            <br><br>
+
+            <input type="submit" value="Enviar" id="enviar">
             <br><br>
             <h4> Si usted hace click en el botón "Enviar", la información será enviada a la página 'show_data.html' </h4>
             
@@ -74,11 +220,11 @@
     </main>
 
     <footer> 
-        <a href="https://www.twitter.com"><img src="https://img.icons8.com/nolan/64/twitter-circled.png" alt="Twitter"></a>
-        <a href="https://www.facebook.com/fatima.lluch"><img src="https://img.icons8.com/nolan/64/facebook-circled.png"alt="Facebook"/></a>
-        <a href="https://www.pinterest.com"><img src="https://img.icons8.com/nolan/64/pinterest.png" alt="Pinterest"/></a>
-        <a href="https://www.instagram.com/fatiilluch"><img src="https://img.icons8.com/nolan/64/instagram-new.png" alt="Instagram"/></a> 
-        <a href="https://www.linkedin.com/in/f%C3%A1tima-lluch-305769157/"><img src="https://img.icons8.com/nolan/64/linkedin.png" alt="LinkedIn"/></a>
+        <a href="https://www.twitter.com" target="_blank" ><img src="https://img.icons8.com/nolan/64/twitter-circled.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/fatima.lluch"  target="_blank"><img src="https://img.icons8.com/nolan/64/facebook-circled.png"alt="Facebook"/></a>
+        <a href="https://www.pinterest.com"  target="_blank"><img src="https://img.icons8.com/nolan/64/pinterest.png" alt="Pinterest"/></a>
+        <a href="https://www.instagram.com/fatiilluch"  target="_blank" ><img src="https://img.icons8.com/nolan/64/instagram-new.png" alt="Instagram"/></a> 
+        <a href="https://www.linkedin.com/in/f%C3%A1tima-lluch-305769157/"  target="_blank"><img src="https://img.icons8.com/nolan/64/linkedin.png" alt="LinkedIn"/></a>
         <br>
         &COPY; All Rights Reserved 2020 <a href="https://harrypotter.fandom.com/es/wiki/Harry_Potter_Fan_Zone" target="_blank"><img src="https://img.icons8.com/color/48/000000/snitch.png"/></a>
     </footer>

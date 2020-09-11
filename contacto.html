@@ -16,10 +16,23 @@
     </header>
 
     <main>
-        <h3> Contacto </h3>
+        <h2 style="text-align: center; background-color: black; color: white; margin-bottom: 20px;"> Contacto </h2>
+        <form style="width: 500px;" action="enviarMail.html" method="POST">
+            <label> Su Nombre: </label> <br> <input type="text" name="nombre" placeholder="Ingrese su no aqui..." required> <br><br>
+            <label> Email: </label> <br> <input type="email" name="email" placeholder="mail@dominio.com" required> <br><br>  
+            <label> Asunto: </label> <br> <input type="text" name="asunto" required> <br><br>
+            <label> Mensaje:  <br>
+                <textarea name="message"> </textarea>
+            </label> 
+            <br><br>
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
+        <!--<div>
+            <p> Para mayor información por favor enviar mail a: </p>
+        </div>
         <section>
-            <a href="mailto://ejemplo@gmail.com"> ejemplo@gmail.com </a>
-        </section>
+            <a href="mailto://fatiilluch@gmail.com"> fatilluch@gmail.com </a>
+        </section> -->
     </main>
 
     <footer> 

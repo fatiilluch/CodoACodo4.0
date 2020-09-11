@@ -67,15 +67,6 @@ footer {
     clear: both;
 }
 
-ol {
-    color: brown;
-    margin-left: 35px;
-}
-
-ul {
-    margin-left: 40px;
-}
-
 table {
     margin-left: 20px;
 }
@@ -89,13 +80,14 @@ section #about {
     font-style: bold;
 }
 
+section #contacto {
+    color: wheat;
+    text-align: start;
+}
+
 textarea {
     height: 6em;
     width: 400px;
-}
-
-h3 {
-    color: wheat;
 }
 
 section img {
@@ -173,5 +165,10 @@ input[type=radio] {
     color: gray;
 }
 
+a:link { 
+    color: white;
+}
 
-
+p {
+    text-align: left;
+}

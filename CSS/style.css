@@ -69,6 +69,7 @@ footer {
 
 table {
     margin-left: 20px;
+    width: 100%;
 }
 
 section #about {
@@ -100,16 +101,17 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 15px;
+    padding-top: 35px;
 }
 
 main form {
-    width: 1500px;
+    width: 1700px;
     margin: auto;
-    text-align: justify; 
+    text-align: justify;
     font-size:x-large; 
     color: white; 
     font-style: bold;
+    padding-top: 20px;
 }
 
 form input, select, textarea {
@@ -122,6 +124,7 @@ textarea {
     width: 500px;
     height: 100px;
     resize: none;
+    clear: both;
 }
 
 input, select {
@@ -135,7 +138,7 @@ input, textarea {
 
 /*Selector avanzado que me permite seleccionar por atributo*/
 input[type=checkbox] {
-    margin-left: 100px;
+    margin-left: 0;
     width: 20px;
     height: 20px;
 }
@@ -144,6 +147,16 @@ input[type=radio] {
     margin-left: 100px;
     width: 20px;
     height: 20px;
+}
+
+input[type=text]{
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+#hedwig {
+    height: 500px;
+    width: 500px;
 }
 
 #enviar {
@@ -171,4 +184,58 @@ a:link {
 
 p {
     text-align: left;
+}
+
+label {
+    clear: both;
+}
+
+div h3 {
+    padding-bottom: 20px;
+}
+
+.izq {
+    float: left;
+}
+
+.fab{
+	color: white;
+	font-size: 3rem;
+	text-decoration: none;
+}
+
+.fa-facebook:hover{
+	text-decoration: none;
+	color: blue;
+}
+
+.fa-twitter:hover{
+	text-decoration: none;
+	color: aqua;
+}
+
+.fa-instagram:hover{
+	text-decoration: none;
+	color: magenta;
+}
+
+.fa-linkedin:hover {
+    text-decoration: none;
+    color: #0173B0;
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background:rgba(200, 170,204, 1);
+    border: solid 3px magenta;
+    transition: 1s;
+}
+
+.cuadrado:hover {
+    /*transform: scale(2);*/
+    /*transform: rotate(360deg);
+    transform: translateY(500px);*/
+    transform: rotateY(360deg);
+
 }

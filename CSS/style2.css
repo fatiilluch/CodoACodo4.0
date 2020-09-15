@@ -79,3 +79,29 @@ footer {
     padding: 20px;
     clear: both;   
 }
+
+.fab{
+	color: white;
+	font-size: 3rem;
+	text-decoration: none;
+}
+
+.fa-facebook:hover{
+	text-decoration: none;
+	color: blue;
+}
+
+.fa-twitter:hover{
+	text-decoration: none;
+	color: aqua;
+}
+
+.fa-instagram:hover{
+	text-decoration: none;
+	color: magenta;
+}
+
+.fa-linkedin:hover {
+    text-decoration: none;
+    color: #0173B0;
+}

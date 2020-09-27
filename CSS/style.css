@@ -45,12 +45,14 @@ nav a {
 .volver {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 main {
     padding: 0 0 20px 0px;
     min-height: 800px;
+    background-color: rgba(50, 50, 50, 0.5);
 }
 
 h1 {
@@ -59,12 +61,42 @@ h1 {
     font-size: 50px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap: 1rem;
+}
+
+.grid-item {
+    color: white;
+    background-color: rgba(50, 50, 50, 0.5);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 1rem;
+    padding: 10px;
+}
+
+.grid-cont {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px 1fr 30px 1fr 30px 1fr;
+}
+
+img[alt^='personaje']{
+    width: 150px;
+    height: 150px;
+    border: black;
+    border-radius: 10px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
 footer {
     text-align: center; 
     background-color: black; 
     color:white;
     padding: 20px;
-    clear: both;
 }
 
 table {
@@ -74,8 +106,7 @@ table {
 
 section #about {
     width: 800px;
-    margin: auto;
-    text-align: justify; 
+    margin: auto; 
     font-size:xx-large; 
     color: white; 
     font-style: bold;
@@ -124,7 +155,6 @@ textarea {
     width: 500px;
     height: 100px;
     resize: none;
-    clear: both;
 }
 
 input, select {
@@ -186,10 +216,6 @@ p {
     text-align: left;
 }
 
-label {
-    clear: both;
-}
-
 div h3 {
     padding-bottom: 20px;
 }
@@ -224,6 +250,10 @@ div h3 {
     color: #0173B0;
 }
 
+.fa-whatsapp:hover{
+	color: #00E676;
+}
+
 .cuadrado {
     width: 100px;
     height: 100px;
@@ -237,5 +267,204 @@ div h3 {
     /*transform: rotate(360deg);
     transform: translateY(500px);*/
     transform: rotateY(360deg);
+}
 
+@media (min-width:320px) and (max-width:400px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 20%;
+        background-color: black;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    section img {
+        width: 90%;
+        height: 300px;
+    }
+
+    section #about {
+        width: 90%;
+    }
+
+    #hedwig {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .cuadrado {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    main form {
+        width: 90%;
+        text-align: start;
+    }
+
+    textarea {
+        margin-top: 10px;
+        width: 85%;
+        height: 100px;
+        resize: none;
+    }
+    
+    input, select {
+        width: 85%;
+        height: 40px;
+    }   
+    
+    #enviar {
+        margin-left: 10%;
+        width: 50%;
+        height: 50px;
+    }
+    
+    input[type=radio] {
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .grid-cont {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+    }
+
+    .radio {
+        display: block;
+    }
+
+    .grid-container{
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    
+    .grid-item {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-gap: 0rem;
+        text-align: left;
+    }
+
+    .grid-item div {
+        width: 80%;
+    }
+
+    img[alt^='personaje']{
+        width: 95%;
+    }
+}
+
+@media (min-width:401px) and (max-width:700px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 20%;
+        background-color: black;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    section img {
+        width: 90%;
+        height: 300px;
+    }
+
+    section #about {
+        width: 90%;
+    }
+
+    #hedwig {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .cuadrado {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    main form {
+        width: 90%;
+        text-align: start;
+    }
+
+    textarea {
+        margin-top: 10px;
+        width: 85%;
+        height: 100px;
+        resize: none;
+    }
+    
+    input, select {
+        width: 85%;
+        height: 40px;
+    }   
+    
+    #enviar {
+        margin-left: 10%;
+        width: 50%;
+        height: 50px;
+    }
+    
+    input[type=radio] {
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .grid-cont {
+        display: grid;
+        grid-template-columns: 30px 1fr 30px 1fr;
+    }
+
+    .radio {
+        display: block;
+    }
+
+    .grid-container{
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    
+    .grid-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-gap: 0rem;
+        text-align: left;
+    }
+
+    .grid-item div {
+        width: 80%;
+    }
+
+    img[alt^='personaje']{
+        width: 95%;
+    }
 }

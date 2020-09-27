@@ -10,7 +10,6 @@ body{
     background-size: 100%;
     background-repeat: round;
     color: white;
-    font-style: oblique;
     background-color:transparent;
     background-color: black;
     font-size: 20px;
@@ -41,24 +40,13 @@ nav a {
     margin: 0px 2px;
     text-decoration: none;
     border-radius: 5px;
-    clear: both;
 }  
 
 .volver {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    clear: both;
-}
-
-#right {
-    float: right;
-    padding-top: 20px;
-}
-
-#left {
-    float: left;
-    padding-top: 20px;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -67,9 +55,26 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table th, table td {
+    height: 40px;
+    border-bottom: 1px solid palevioletred;
+    padding: 5px;
+}
+
 main {
     padding: 0 0 20px 0px;
     min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    background-color: rgba(50, 50, 50, 0.5);
 }
 
 footer {
@@ -105,3 +110,37 @@ footer {
     text-decoration: none;
     color: #0173B0;
 }
+
+a .fa-whatsapp:hover{
+	color: #00E676;
+}
+
+@media (min-width:320px) and (max-width:400px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 20%;
+        background-color: black;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    h2 {
+        width: 80%;
+    }
+}
+

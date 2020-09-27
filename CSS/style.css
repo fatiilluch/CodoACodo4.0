@@ -187,6 +187,7 @@ input[type=text]{
 #hedwig {
     height: 500px;
     width: 500px;
+    text-align: center;
 }
 
 #enviar {
@@ -259,13 +260,14 @@ div h3 {
     height: 100px;
     background:rgba(200, 170,204, 1);
     border: solid 3px magenta;
-    transition: 1s;
+    text-align: center;
 }
 
 .cuadrado:hover {
     /*transform: scale(2);*/
     /*transform: rotate(360deg);
     transform: translateY(500px);*/
+    transition: transform 3s ease-in-out;
     transform: rotateY(360deg);
 }
 
@@ -299,15 +301,13 @@ div h3 {
     }
 
     #hedwig {
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        width: 20%;
+        height: 20%;
     }
 
     .cuadrado {
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        width: 20%;
+        height: 20%;
     }
 
     main form {
@@ -375,6 +375,7 @@ div h3 {
         flex-direction: row;
         justify-content: space-between;
         height: 20%;
+        width: 100%;
         background-color: black;
     }
 
@@ -397,17 +398,15 @@ div h3 {
     section #about {
         width: 90%;
     }
-
+    
     #hedwig {
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        width: 30%;
+        height: 30%;
     }
 
     .cuadrado {
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        width: 30%;
+        height: 30%;
     }
 
     main form {

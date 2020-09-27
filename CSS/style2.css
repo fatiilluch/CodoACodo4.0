@@ -144,3 +144,33 @@ a .fa-whatsapp:hover{
     }
 }
 
+@media (min-width:401px) and (max-width:700px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 20%;
+        width: 100%;
+        background-color: black;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    table {
+        width: 95%;
+    }
+
+    h2 {
+        width: 80%;
+    }
+}
+

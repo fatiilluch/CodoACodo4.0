@@ -19,6 +19,7 @@ header {
     background-color: black;
     color: white;
     height: 100px;
+    text-align: center;
 }
 
 nav a {
@@ -136,13 +137,15 @@ section {
 }
 
 main form {
-    width: 1700px;
+    width: 1800px;
     margin: auto;
     text-align: justify;
     font-size:x-large; 
+    max-width: 100%;
     color: white; 
     font-style: bold;
     padding-top: 20px;
+    box-shadow: 0 0 20px 1px rgba(43, 39, 39, 0.3);
 }
 
 form input, select, textarea {
@@ -196,7 +199,7 @@ input[type=text]{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    margin-left: 40%;
+    margin-left: 50%;
     text-decoration: none;
     border-radius: 5px;
     width: 200px;
@@ -269,6 +272,42 @@ div h3 {
     transform: translateY(500px);*/
     transition: transform 3s ease-in-out;
     transform: rotateY(360deg);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    width: 500px;
+    margin: auto;
+    text-align: justify;
+    font-size:x-large; 
+    color: white; 
+    font-style: bold;
+    padding-top: 20px;
+}
+
+.contacto #enviar {
+    padding: 5px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 20%;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid gray;
+}
+
+.fijar {
+    margin-top: -135px;
 }
 
 h1 {

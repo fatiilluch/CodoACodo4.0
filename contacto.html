@@ -20,8 +20,8 @@
         <h2 style="text-align: center; background-color: black; color: white; margin-bottom: 20px;"> Contacto </h2>
         <section class="flex-container">
             <form class="contacto" action="enviarMail.html" method="POST" autocomplete="off" onsubmit="return validarForm();">
-                <label> Su Nombre: </label> <br> <input type="text" id="nombre" placeholder="Ingrese su no aqui..." > <br><br>
-                <label> Email: </label> <br> <input type="email" id="email" placeholder="mail@dominio.com"> <br><br>  
+                <label> Su Nombre: </label> <br> <input type="text" id="nombre" placeholder="Ingrese su nombre aqui..." > <br><br>
+                <label> Email: </label> <br> <input type="text" id="email" placeholder="mail@dominio.com" onblur="validateMail();"> <br><br>  
                 <label> Asunto: </label> <br> <input type="text" id="asunto" > <br><br>
                 <label> Mensaje:</label> <textarea id="message"></textarea>
                 <br><br>
